@@ -104,8 +104,12 @@ procedure Main is
 begin
    Initialize;
    All_Off;
-   All_On;
-   All_Off;
+   for I in 1..3 loop
+     All_On;
+     delay until Clock + Milliseconds(100);
+     All_Off;
+     delay until Clock + Milliseconds(100);
+   end loop;
    loop
       Up;
       Down;
