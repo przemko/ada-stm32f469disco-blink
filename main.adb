@@ -104,6 +104,8 @@ procedure Main is
 begin
    Initialize;
    All_Off;
+   All_On;
+   All_Off;
    loop
       Up;
       Down;
